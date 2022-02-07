@@ -1,8 +1,6 @@
+\subtitle{Einleitung}
 
-
-
-
-
+\huberlintitlepage[22pt]
 
 \iftoggle{syntaxvorlesungen}{
 
@@ -21,10 +19,29 @@ gest.\ vor 650 n. Chr., aus \emph{Vakyapadiya}, gefunden von Gabriele Knoll)
 %\if 0
 
 \iftoggle{einfsprachwiss-exclude}{
-\section{Einleitung}
+\section{Motivation fromale Syntax und Phrasenstrukturgrammatiken}
 }
 
 \iftoggle{hpsgvorlesung}{
+
+\subsection{Ziele}
+
+\frame{
+\frametitle{Ziele}
+
+
+\begin{itemize}[<+->]
+\item Vermittlung grundlegender Vorstellungen über deutsche Syntax
+\item Gefühl für die Daten, Zusammenhänge und Komplexität
+\item Einführung in Grundannahmen in der HPSG
+\item Befähigung zum Schreiben formaler Grammatiken
+\item Die Erleuchtung und Erlangung übernatürlicher Kräfte
+\end{itemize}
+
+
+}
+
+
 \outline{
 
 \begin{itemize}
@@ -48,11 +65,11 @@ gest.\ vor 650 n. Chr., aus \emph{Vakyapadiya}, gefunden von Gabriele Knoll)
 
 \iftoggle{einfsprachwiss-exclude}{
 \frame{
-\frametitlefit{Motivation fromale Syntax und Phrasenstrukturgrammatiken}
+\frametitlefit{Literaturhinweise}
 
 \begin{itemize}
 \item Literatur: \citew[Kapitel~1]{MuellerLehrbuch} bzw.\ \citew[Kapitel~1]{MuellerGTBuch}
-\item Englische Version des Grammatiktheoriebuches: \citew{MuellerGT-Eng}
+\item Englische Version des Grammatiktheoriebuches: \citew[Kapitel~1]{MuellerGT-Eng}
 \end{itemize}
 
 \vspace{1cm}
@@ -75,7 +92,7 @@ gest.\ vor 650 n. Chr., aus \emph{Vakyapadiya}, gefunden von Gabriele Knoll)
 \item Literatur: \citew[Kapitel~1]{MuellerLehrbuch} bzw.\ \citew[Kapitel~1]{MuellerGTBuch}
 \medskip
 
-\item Zeichen: Form-Bedeutungs-Paare \citep{Saussure16a}
+\item Zeichen: Form-Bedeutungs-Paare \citep{Saussure16a-Fr}
 \pause
 \item Wörter, Wortgruppen, Sätze
 \pause
@@ -859,13 +876,13 @@ Diese Merkmale werden auch \alert{Kopfmerkmale} genannt.
 immer einen \emph{Liebenden} und einen \emph{Geliebten} / etwas \emph{Geliebtes}.
 
 \eal
-\ex Peter liebt Maria.
-\ex $lieben'(Peter', Maria')$
+\ex Conny liebt Aicke.
+\ex $lieben'(Conny', Aicke')$
 \zl
 
 (\mex{0}b) ist eine logische Repräsentation für (\mex{0}a).
 
-\relation{Peter} und \relation{Maria} sind \alert{logische Argumente} von \relation{lieben}.
+\relation{Conny} und \relation{Aicke} sind \alert{logische Argumente} von \relation{lieben}.
 
 \pause
 \item Syntaktische Argumente entsprechen meistens den logischen (später mehr).
@@ -931,8 +948,8 @@ auf die Verbindungen, die sie eingehen, gleich verhalten.
 \hspace{5em}
 \begin{forest}
 [lieben
- [Peter]
- [Maria] ]
+ [Conny]
+ [Aicke] ]
 \end{forest}
 }
 
@@ -977,8 +994,8 @@ ist ein \alert{fakultatives Argument}.
 \begin{itemize}
 \item In unserem bisherigen Beispiel entsprechen die syntaktischen den logischen Argumenten:
 \eal
-\ex Peter liebt Maria.
-\ex $lieben'(Peter', Maria')$
+\ex Conny liebt Aicke.
+\ex $lieben'(Conny', Aicke')$
 \zl
 
 \pause
@@ -986,7 +1003,7 @@ ist ein \alert{fakultatives Argument}.
 
 \eal
 \ex Es regnet.
-\ex Peter erholt sich.
+\ex Conny erholt sich.
 \zl
 \emph{es} und \emph{sich} sind \alert{syntaktische Argumente},\\
 aber keine \alert{logischen Argumente}.
@@ -1016,10 +1033,10 @@ aber keine \alert{logischen Argumente}.
 
 \emph{seit der Schulzeit} in (\mex{1}) ist von anderer Art:
 \ea
-Peter liebt Maria seit der Schulzeit.
+Conny liebt Aicke seit der Schulzeit.
 \z
 Es sagt zusätzlich etwas über die Dauer der Relation aus,\\
-in der Peter und Maria zueinander stehen.
+in der Conny und Aicke zueinander stehen.
 
 \end{itemize}
 
@@ -1032,19 +1049,19 @@ in der Peter und Maria zueinander stehen.
 \begin{itemize}
 \item Adjunkte sind optional:
 \eal
-\ex Peter liebt Maria.
-\ex Peter liebt Maria seit der Schulzeit.
-\ex Peter liebt Maria aufrichtig.
+\ex Conny liebt Aicke.
+\ex Conny liebt Aicke seit der Schulzeit.
+\ex Conny liebt Aicke aufrichtig.
 \zl
 \pause
 \item Vorsicht! Das ist auch bei Argumenten mitunter der Fall:
 \eal
-\ex Er gibt den Armen Geld.
-\ex Er gibt den Armen.
+\ex Conny gibt den Armen Geld.
+\ex Conny gibt den Armen.
 \pause
-\ex Er gibt Geld.
+\ex Conny gibt Geld.
 \pause
-\ex Er gibt gerne.
+\ex Conny gibt gerne.
 \pause
 \ex Du gibst. (beim Skat)
 \pause
@@ -1056,7 +1073,6 @@ in der Peter und Maria zueinander stehen.
 }
 
 
-
 \frame{
 \frametitle{Adjunkte sind iterierbar}
 
@@ -1064,21 +1080,21 @@ in der Peter und Maria zueinander stehen.
 \begin{itemize}
 \item Argumente können nur einmal mit dem Kopf kombiniert werden:
 \ea[*]{
-Der Mann der Mann schläft.
+Das Kind das Kind lacht.
 }
 \z
 
-Die entsprechende Andockstelle des Kopfes (\emph{schläft}) ist besetzt.
+Die entsprechende Andockstelle des Kopfes (\emph{lacht}) ist besetzt.
 
 \pause
 \item Bei Adjunkten ist das anders:
 
 \ea
 \label{Beispiel-Iteration-Adjektive}
-A: Alle klugen Frauen sind unglücklich.\\
-B: Nein, ich kenne eine glückliche kluge Frau.\\
-A: Aber alle glücklichen klugen Frauen sind schön.\\
-B: Nein, ich kenne eine hässliche glückliche kluge Frau.\\
+A: Alle grauen Eichhörnchen sind groß.\\
+B: Nein, ich habe ein kleines graues Eichhörnchen gesehen.\\
+A: Aber alle kleinen grauen Eichhörnchen sind krank.\\
+B: Nein, ich habe ein gesundes kleines graues Eichhörnchen gesehen.\\
 \hspaceThis{A:~}\ldots
 \z
 
@@ -1092,14 +1108,14 @@ B: Nein, ich kenne eine hässliche glückliche kluge Frau.\\
 
 Adverbial gebrauchtes Adjektiv (nicht alle Adjektive):
 \ea
-Karl schnarcht \emph{laut}.
+Conny lacht  \emph{laut}.
 \z
 
 
 Relativsätze (nicht alle):
 \eal
-\ex der Mann, \emph{den Maria liebt}
-\ex der Mann, \emph{der Maria liebt}
+\ex das Kind, \emph{dem Aicke hilft}
+\ex das Kind, \emph{das Aicke hilft}
 \zl
 
 
@@ -1333,7 +1349,7 @@ Zu weiteren Prädikativen siehe \citew{Duden2005}.
 \item Phrasenstrukturgrammatik (PSG)\nocite{Bloomfield33a-u}
 \item Transformationsgrammatik und deren Nachfolger
       \begin{itemize}
-      \item Transformationsgrammatik \\\citep{Chomsky57a,Bierwisch63}
+      \item Transformationsgrammatik \\\citep{Chomsky57a,Bierwisch63a}
       \item Government \& Binding \\\citep{Chomsky81a,SS88a,Grewendorf88a}
       \item Minimalismus \\\citep{Chomsky95a-u,Grewendorf2002a}
       \end{itemize}
@@ -1348,8 +1364,8 @@ Zu weiteren Prädikativen siehe \citew{Duden2005}.
 \item Tree Adjoning Grammar\\
       \citep*{JLT75a-u,Joshi87a-u,KJ85a}
 \item Generalisierte Phrasenstrukturgrammatik (GPSG)\\\citep*{GKPS85a,Uszkoreit87a}
-\item Lexikalisch Funktionale Grammatik (LFG)\\\citep{Bresnan82a-ed,Bresnan2001a,BF96a-u,Berman2003a}
-\item Head-Driven Phrase Structure Grammar (HPSG)\\\citep{ps,ps2,Mueller99a,Mueller2002b,MuellerLehrbuch}
+\item Lexikalisch Funktionale Grammatik (LFG)\\\citep{Bresnan82a-ed,Bresnan2001a,BF96a-ed,Berman2003a}
+\item Head-Driven Phrase Structure Grammar (HPSG)\\\citep{ps,ps2,Mueller99a,Mueller2002b,MuellerLehrbuch,HPSGHandbook}
 \item Construction Grammar (CxG)\\\citep*{FKoC88a,Goldberg95a,Goldberg2006a,FS2006a-ed}
 
 \bigskip
@@ -1359,6 +1375,6 @@ Zu weiteren Prädikativen siehe \citew{Duden2005}.
 
 }
 
-\input{hpsg-phrasenstrukturgrammatik}
+\input{geteilte-Folien/phrasenstrukturgrammatik}
 
 %\fi

@@ -304,6 +304,60 @@ NP            &              & NP            &              & NP       & \highli
 \vfill
 }
 
+
+\begin{frame}[fragile]
+\frametitle{Do try this at home!}
+
+Sie können solche Grammatiken selbst ausprobieren.
+\begin{itemize}
+\item Gehen Sie auf \url{https://swish.swi-prolog.org/}.
+\item Klicken Sie "`Program"'.
+\item Geben Sie folgendes ein:
+\begin{verbatim}
+s --> np, v, np, np.
+np --> det, n.
+np --> [er].
+det --> [das].
+det --> [dem].
+n --> [buch].
+n --> [kind].
+v --> [gibt].
+\end{verbatim}
+\item Geben Sie in die untere rechte Box folgendes ein: \texttt{s([er,gibt,das,buch,dem,kind],[]).}
+\item Wenn in der Box darüber "`true"' erscheint, feiern Sie!
+\end{itemize}
+
+\end{frame}
+
+\frame{
+\frametitle{Eine Generative Grammatik}
+
+\begin{itemize}
+\item Die Grammatik, die Sie eingegeben haben, kann Sätze erzeugen:
+\pause
+\item Man kann testen, welche Sätze die Grammatik generiert, indem man folgendes eingibt:
+\texttt{s([X],[]),print(X),nl,fail.}
+
+\pause
+\item \texttt{s([X],[])} fordert Prolog auf, ein X zu finden, das ein "`s"' ist.
+\pause
+\item \texttt{print(X),nl} gibt das X und eine newline aus und
+\pause
+\item \texttt{fail} teilt Prolog mit, dass wir nicht zufrieden sind und dass es noch eine weitere
+  Lösung suchen soll.
+\pause
+\item Es versucht weiter, bis es keine weiteren Lösungen mehr gibt und failt dann.
+\pause
+\item Einige Grammatiken generieren unendlich viele Xe. Dieser Prozess würde also nie terminieren
+  (es sei denn, der Computer hat nicht genug Speicher \ldots).
+
+\end{itemize}
+
+}
+
+
+
+
 \frame{
 
 \frametitle{Von der Grammatik beschriebene Sätze}
@@ -579,54 +633,6 @@ X steht für beliebige Kategorie, `*' für beliebig viele Wiederholungen
 }
 
 
-\subsection{Grundlegendes zur HPSG}
-
-\frame[shrink]{
-
-\frametitle{Grundlegendes zur HPSG}
-\small
-\begin{itemize}
-\item entwickelt von \citet{ps,ps2}\nocite{Sag97a} aus Kategorialgrammatik und GPSG
-\pause
-\item Einflüsse von Dependenzgrammatik und Government \& Binding und später CxG
-\pause
-\item lexikalisiert (head-driven/kopfgesteuert)
-\pause
-\item zeichenbasiert \citep{Saussure16a}
-\pause
-%\item unifikationsbasiert
-\item getypte Merkmalstrukturen (Lexikoneinträge, Phrasen, Prinzipien)
-\pause
-\item Mehrfachvererbung
-\pause
-\item monostratale Theorie\\~\\
-\begin{minipage}[t]{2.5cm}
-~\\[-20mm]
-\begin{itemize}
-\item \blau<6>{Phonologie}
-\item \blau<7>{Syntax}
-\item \blau<8>{Semantik}
-\end{itemize}
-\end{minipage}%
-\parbox[t]{3cm}{
-\resizebox{5cm}{!}{
-\(
-\ms[word]{
-{phon}   & \blau<6>{\phonliste{ Grammatik }} \\[1mm]
-synsem$|$loc & \ms[loc]{ {cat}  & \blau<7>{\ms[cat]{ head & \ms[noun]{ case & \ibox{1}\\
-                                                       }\\[6mm]
-                                       subcat & \liste{ DET[{\sc case}~\ibox{1}] } \\
-                                     }} \\[6mm]
-              {cont} & \blau<8>{\ldots \ms[grammatik]{ inst & X \\
-                                   }}\\
-            }\\
-}
-\)
-}
-}
-\end{itemize}
-}
-}%\end{hpsgvorlesung}
 
 \subsection{Hausaufgabe}
 
@@ -666,3 +672,9 @@ synsem$|$loc & \ms[loc]{ {cat}  & \blau<7>{\ms[cat]{ head & \ms[noun]{ case & \i
 \end{enumerate}
 
 }
+
+}
+
+
+
+

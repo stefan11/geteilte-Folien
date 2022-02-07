@@ -9,14 +9,14 @@
 \begin{itemize}
 \item Bisher NPen immer Det + N, Nominalphrasen können aber wesentlich komplexer sein:
 \eal
-\ex eine Frau
-\ex eine Frau, die wir kennen
-\ex eine Frau aus Stuttgart
-\ex eine kluge Frau
-\ex eine Frau aus Stuttgart, die wir kennen
-\ex eine kluge Frau aus Stuttgart
-\ex eine kluge Frau, die wir kennen
-\ex eine kluge Frau aus Stuttgart, die wir kennen
+\ex ein Buch
+\ex ein Buch, das wir kennen
+\ex ein Buch aus Japan
+\ex ein interessantes Buch
+\ex ein Buch aus Japan, das wir kennen
+\ex ein interessantes Buch aus Japan
+\ex ein interessantes Buch, das wir kennen
+\ex ein interessantes Buch aus Japan, das wir kennen
 \zl
 
 Zusätzliches Material in (\mex{0}) sind Adjunkte.
@@ -64,7 +64,7 @@ NP $\to$ Det A* N
 \z
 Konstituententests legen aber Konstituentenstatus von A + N nahe:
 \ea
-alle [[geschickten Kinder] und [klugen Frauen]]
+alle [[großen Seeelefanten] und [grauen Eichhörnchen]]
 \z
 
 \end{itemize}
@@ -88,20 +88,20 @@ alle [[geschickten Kinder] und [klugen Frauen]]
 \begin{forest}
 sm edges
 [NP
-   [Det [eine] ]
+   [Det [ein] ]
    [\nbar
-      [N [Frau] ] ] ]
+      [N [Eichhörnchen] ] ] ]
 \end{forest}}
 \hfill
 \scalebox{.65}{%
 \begin{forest}
 sm edges
 [NP
-   [Det [eine] ]
+   [Det [ein] ]
    [\nbar
-      [A [kluge] ]
+      [A [graues] ]
       [\nbar
-        [N [Frau] ] ] ] ]
+        [N [Eichhörnchen] ] ] ] ]
 \end{forest}}
 %
 \hfill
@@ -111,11 +111,11 @@ sm edges
 [NP
   [Det [eine] ]
     [\nbar
-    [A [glückliche] ]
+    [A [großes] ]
        [\nbar
-       [A [kluge] ]
+       [A [graues] ]
          [\nbar
-         [N [Frau] ] ] ] ] ]
+         [N [Eichhörnchen] ] ] ] ] ]
 \end{forest}}
 \hfill\mbox{}
 %
@@ -248,9 +248,9 @@ sm edges
 \begin{itemize}
 \item Nomen fehlt, aber Adjunkte sind vorhanden:
 \eal
-\ex eine kluge \_
-\ex eine kluge \_ aus Hamburg
-\ex eine kluge \_, die alle kennen
+\ex ein interessantes \_
+\ex ein interessantes \_ aus Hamburg
+\ex ein interessantes \_, das alle kennen
 \zl
 \pause
 \item Nomen fehlt, aber Komplement des Nomens ist vorhanden:
@@ -285,9 +285,9 @@ Beschriftung tragen, wie die Schachteln normaler Nomina.
 \begin{forest}
 sm edges
 [NP
-  [Det [eine] ]
+  [Det [ein] ]
   [\nbar
-    [A [kluge] ]
+    [A [interessantes] ]
     [\nbar
       [N [\trace ] ] ] ] ]
 \end{forest}
@@ -314,10 +314,10 @@ sm edges
 
 Plural:
 \eal
-\ex Frauen
-\ex Frauen, die wir kennen
-\ex kluge Frauen
-\ex kluge Frauen, die wir kennen
+\ex Bücher
+\ex Bücher, die wir kennen
+\ex interessante Bücher
+\ex interessante Bücher, die wir kennen
 \zl
 
 \pause
@@ -344,7 +344,7 @@ sm edges
 [NP
   [Det [\trace] ]
   [\nbar
-    [N [Frauen] ] ] ]
+    [N [Bücher] ] ] ]
 \end{forest}
 
 }
@@ -354,7 +354,7 @@ sm edges
 
 Determinator und Nomen können auch gleichzeitig weggelassen werden:
 \eal
-\ex Ich helfe klugen.
+\ex Ich lese interessante.
 \ex Dort drüben steht frisches, das gerade gemahlen wurde.
 \zl
 
@@ -365,7 +365,7 @@ sm edges
 [NP
   [Det [\trace] ]
   [\nbar
-    [A [klugen] ]
+    [A [interessante] ]
     [\nbar
       [N [\trace] ] ] ] ]
 \end{forest}}
@@ -414,12 +414,12 @@ sm edges
 \frametitle{Adjektivphrasen}
 
 \begin{itemize}
-\item Bisher nur einfache Adjektive wie \emph{klug}.
+\item Bisher nur einfache Adjektive wie \emph{interessant}.
 \pause
 \item Mitunter sind Adjektivphrasen aber sehr komplex:
 \eal
 \ex der [seiner Frau treue] Mann
-\ex der [auf seinen Sohn stolze] Mann
+\ex der [auf seine Tochter stolze] Mann
 \ex der [seine Frau liebende] Mann
 \ex der [von seiner Frau geliebte] Mann
 \zl
@@ -598,10 +598,10 @@ sm edges
 \frametitle{Adjektivphrasen im Englischen}
 
 \eal
-\ex He is proud.
-\ex He is very proud.
-\ex He is proud of his son.
-\ex He is very proud of his son.
+\ex They are proud.
+\ex They are very proud.
+\ex They are proud of their child.
+\ex They are very proud of their child.
 \zl
 
 \pause
@@ -648,7 +648,7 @@ sm edges
 [AP
   [\abar
     [A [proud] ]
-    [PP [of his son,roof] ] ] ]
+    [PP [of their child,roof] ] ] ]
 \end{forest}
 \hfill
 \begin{forest}
@@ -657,7 +657,7 @@ sm edges
   [AdvP [very] ]
   [\abar
     [A [proud] ]
-    [PP [of his son,roof] ] ] ]
+    [PP [of their child,roof] ] ] ]
 \end{forest}
 \hfill
 \mbox{}
@@ -759,10 +759,18 @@ $\to$ muss nicht unbedingt ein X$'$ mit Adjunkttochter geben.
 \oneline{\(
 \begin{array}{@{}l@{\hspace{1cm}}l@{\hspace{1cm}}l}
 \xbar\mbox{-Regel} & \mbox{mit Kategorien} & \mbox{Beispiel}\\[2mm]
-\overline{\overline{\mbox{X}}} \rightarrow \overline{\overline{\mbox{Spezifikator}}}~~\xbar & \overline{\overline{\mbox{N}}} \rightarrow \overline{\overline{\mbox{DET}}}~~\overline{\mbox{N}} & \mbox{das [Bild von Maria]} \\
-\xbar \rightarrow \xbar~~\overline{\overline{\mbox{Adjunkt}}}             & \overline{\mbox{N}} \rightarrow \overline{\mbox{N}}~~\overline{\overline{\mbox{REL\_SATZ}}} & \mbox{[Bild von Maria] [das alle kennen]}\\
-\xbar \rightarrow \overline{\overline{\mbox{Adjunkt}}}~~\xbar             & \overline{\mbox{N}} \rightarrow \overline{\overline{\mbox{ADJ}}}~~\overline{\mbox{N}} & \mbox{schöne [Bild von Maria]}\\
-\xbar \rightarrow \mbox{X}~~\overline{\overline{\mbox{Komplement}}}*               & \overline{\mbox{N}} \rightarrow \mbox{N}~~\overline{\overline{\mbox{P}}} & \mbox{Bild [von Maria]}\\\\
+\overline{\overline{\mbox{X}}} \rightarrow \overline{\overline{\mbox{Spezifikator}}}~~\xbar &
+                                                                                              \overline{\overline{\mbox{N}}} \rightarrow \overline{\overline{\mbox{DET}}}~~\overline{\mbox{N}} & \mbox{das [Bild vom Gleimtunnel]} \\
+\xbar \rightarrow \xbar~~\overline{\overline{\mbox{Adjunkt}}}             & \overline{\mbox{N}}
+                                                                            \rightarrow
+                                                                            \overline{\mbox{N}}~~\overline{\overline{\mbox{REL\_SATZ}}}
+                                           & \mbox{[Bild vom Gleimtunnel] [das alle kennen]}\\
+\xbar \rightarrow \overline{\overline{\mbox{Adjunkt}}}~~\xbar             & \overline{\mbox{N}}
+                                                                            \rightarrow
+                                                                            \overline{\overline{\mbox{ADJ}}}~~\overline{\mbox{N}}
+                                           & \mbox{schöne [Bild vom Gleimtunnel]}\\
+\xbar \rightarrow \mbox{X}~~\overline{\overline{\mbox{Komplement}}}*               &
+                                                                                     \overline{\mbox{N}} \rightarrow \mbox{N}~~\overline{\overline{\mbox{P}}} & \mbox{Bild [vom Gleimtunnel]}\\\\
 \end{array}
 \)}
 
